@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container
+{
+    padding-left: 50px;
+    padding-right: 50px; 
+    margin: auto;
+    max-width: 1190px;
+    border: 2px solid red;
+    margin-top: 5px;
+}
+
+.fst
+{
+    margin-top: 30px;
+}
+.container_first_row
+{
+    display: flex;
+}
+.box
+{
+    border: 2px solid red;
+    width: 250px;
+    height: 200px;
+    background-color: brown;
+    
+}
+
+
+/* postion Static => postion static is a default property  */
+
+/* Note :- no one effect on box1 because i use static postion property */
+.box1
+{
+    /* no one property work on box1 */
+    position: static;      
+    left: 30px; 
+    right: 30px;  
+    left: 30px;   
+    right: 30px;  
+
+}
+    /* postion relative it change the curent position */
+.box1
+{
+    position: relative;
+      top: 10px;  
+      padding-left: 10px; 
+      bottom: 10px; 
+}
+
+
+/* absalute property */
+
+/* absalute property not a depend any thing but it parent are relative than work on according to 
+parent means it change the position according to parent */
+.box12
+{
+    border: 2px solid rgb(68, 0, 255);
+    width: 250px;
+    height: 200px;
+    background-color: rgb(54, 241, 16);
+    
+}
+
+.container_box1
+{
+   
+    display: flex;
+    position: relative;
+}
+
+.box4
+{
+    position: absolute;
+   
+    position: absolute;
+    top: 159px;
+    /* left: 10px; */
+    right: 204px;
+    /* always give the height property to left */
+    left: 10px;
+}
+.box5
+{
+    position: absolute;
+    top: 15px;
+}
+
+
+/* fixed property */
+
+
+.fixed_margin
+{
+    margin-top: 200px;
+}
+.fixed
+{
+    border: 2px solid rgb(27, 27, 23);
+    width: 250px;
+    height: 200px;
+    background-color: rgb(250, 246, 20);
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+}
+
+/* sticky method  */
+
+.header {
+    background-color: red;
+    text-align: center;
+    height: 50px;
+    top: 5px;
+    font-size: large;
+    
+}
+.stk
+{
+    position: sticky;
+    top: 5px;
+}
+h1
+{
+    text-align: center;
+}
